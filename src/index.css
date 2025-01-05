@@ -1,0 +1,51 @@
+/* Preloader Overlay to cover the whole screen */
+.preloader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(255, 255, 255); /* Light background with some transparency */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure it is on top */
+}
+
+/* Preloader container styling */
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between the icons */
+}
+
+/* Styling for each individual span */
+span {
+  font-size: 40px; /* Adjust size of the characters */
+  font-family: 'Arial', sans-serif; /* Optional font */
+  animation: spin 2s linear infinite; /* Apply spin animation */
+}
+
+/* Delay each span's animation so they spin in unison but with slight offset */
+span:nth-child(1) {
+  animation-delay: 0s; /* No delay for the first span */
+}
+
+span:nth-child(2) {
+  animation-delay: 0.2s; /* Small delay for the second span */
+}
+
+span:nth-child(3) {
+  animation-delay: 0.4s; /* Small delay for the third span */
+}
+
+/* Keyframes to spin the characters */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start position */
+  }
+  100% {
+    transform: rotate(360deg); /* End position */
+  }
+}
