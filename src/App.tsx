@@ -35,7 +35,7 @@ const App: React.FC = () => {
     <>
       <div className="min-vh-100 d-flex flex-column justify-content-center align-items-center bg-light">
         <Header
-          title="Your Daily Boost 🎕 "
+          title="Your Daily Boost"
           subtitle="Get inspired with a new quote today!"
         />
 
